@@ -1,0 +1,1248 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="JosJos Glass Experts provides custom glass shower enclosures, window replacement, glass balustrades, mirrors, and architectural glass solutions in Eldoret, Kenya.">
+    <meta name="keywords" content="glass company in Eldoret, glass shower doors Eldoret, window glass replacement Kenya, custom mirrors Eldoret, frameless shower enclosure Kenya, glass balustrades Eldoret, commercial glass installation Kenya">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="author" content="JosJos Glass Experts">
+    <meta name="theme-color" content="#0284c7">
+    <meta property="og:title" content="JosJos Glass Experts | Glass Solutions in Eldoret, Kenya">
+    <meta property="og:description" content="Custom architectural and interior glass solutions for homes, offices, and commercial spaces in Eldoret, Kenya.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/logos/logo.jpeg">
+    <meta property="og:locale" content="en_KE">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="JosJos Glass Experts">
+    <meta name="twitter:description" content="Custom glass shower enclosures, window repair, mirrors, balustrades, and commercial glass installation in Eldoret, Kenya.">
+    <meta name="twitter:image" content="assets/logos/logo.jpeg">
+    <title>JosJos Glass Experts | Glass Solutions in Eldoret, Kenya</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        glass: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            500: '#0284c7',
+                            600: '#0284c7',
+                            700: '#0369a1',
+                            900: '#0c4a6e',
+                        },
+                        emerald: {
+                            500: '#10b981',
+                            600: '#059669',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Touch safety & optimized scrolling */
+        body {
+            -webkit-tap-highlight-color: transparent;
+            touch-action: manipulation;
+            font-family: 'Inter', sans-serif;
+            padding-bottom: 72px; /* Space for bottom nav on mobile */
+        }
+
+        @media (min-width: 768px) {
+            body {
+                padding-bottom: 0;
+            }
+        }
+
+        /* Hardware accelerated glassmorphism */
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.75);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+        }
+
+        .glass-panel-dark {
+            background: rgba(15, 23, 42, 0.85);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        /* Snap carousel for mobile touch swiping */
+        .snap-x-mandatory {
+            scroll-snap-type: x mandatory;
+            -webkit-overflow-scrolling: touch;
+        }
+        
+        .snap-center-item {
+            scroll-snap-align: center;
+        }
+
+        /* Custom range slider styling for touch accessibility */
+        input[type=range] {
+            -webkit-appearance: none;
+            width: 100%;
+            background: transparent;
+        }
+
+        input[type=range]:focus {
+            outline: none;
+        }
+
+        input[type=range]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            height: 28px;
+            width: 28px;
+            border-radius: 50%;
+            background: #0284c7;
+            cursor: pointer;
+            margin-top: -10px;
+            box-shadow: 0 4px 10px rgba(2, 132, 199, 0.4);
+        }
+
+        input[type=range]::-webkit-slider-runnable-track {
+            width: 100%;
+            height: 8px;
+            cursor: pointer;
+            background: #e2e8f0;
+            border-radius: 4px;
+        }
+
+        /* Hide scrollbars for crisp UI */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 min-h-screen flex flex-col justify-between antialiased selection:bg-cyan-500 selection:text-white">
+
+    <!-- Top Header -->
+    <header class="sticky top-0 z-40 w-full glass-panel border-b border-slate-200/80 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <!-- Brand Logo -->
+            <a href="#" onclick="navigateTo('home'); return false;" class="flex items-center gap-2.5 group">
+                <img src="assets/logos/logo.jpeg" alt="JosJos Glass Experts logo" class="w-10 h-10 rounded-xl object-cover shadow-lg shadow-cyan-500/20 group-hover:scale-105 transition-transform">
+                <div class="flex flex-col">
+                    <span class="font-extrabold text-lg text-slate-900 tracking-tight leading-none">JosJos</span>
+                    <span class="text-[10px] font-semibold text-cyan-600 tracking-widest uppercase">Glass Experts</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <nav class="hidden md:flex items-center space-x-1">
+                <button onclick="navigateTo('home')" class="nav-link px-4 py-2 rounded-xl text-sm font-semibold transition-colors text-cyan-600 bg-cyan-50" data-page="home">Home</button>
+                <button onclick="navigateTo('products')" class="nav-link px-4 py-2 rounded-xl text-sm font-semibold transition-colors text-slate-600 hover:text-slate-900 hover:bg-slate-100" data-page="products">Products</button>
+                <button onclick="navigateTo('services')" class="nav-link px-4 py-2 rounded-xl text-sm font-semibold transition-colors text-slate-600 hover:text-slate-900 hover:bg-slate-100" data-page="services">Services</button>
+                <button onclick="navigateTo('portfolio')" class="nav-link px-4 py-2 rounded-xl text-sm font-semibold transition-colors text-slate-600 hover:text-slate-900 hover:bg-slate-100" data-page="portfolio">Portfolio</button>
+                <button onclick="navigateTo('faq')" class="nav-link px-4 py-2 rounded-xl text-sm font-semibold transition-colors text-slate-600 hover:text-slate-900 hover:bg-slate-100" data-page="faq">FAQ</button>
+                <button onclick="navigateTo('location')" class="nav-link px-4 py-2 rounded-xl text-sm font-semibold transition-colors text-slate-600 hover:text-slate-900 hover:bg-slate-100" data-page="location">Location</button>
+                <button onclick="navigateTo('quote')" class="nav-link px-4 py-2 rounded-xl text-sm font-semibold transition-colors text-slate-600 hover:text-slate-900 hover:bg-slate-100" data-page="quote">Quote Calculator</button>
+            </nav>
+
+            <!-- Call & CTA Buttons Desktop -->
+            <div class="hidden sm:flex items-center gap-3">
+                <a href="tel:+254712345678" class="h-11 px-4 rounded-xl bg-slate-100 text-slate-700 hover:bg-slate-200 font-semibold text-sm flex items-center gap-2 transition-all active:scale-95">
+                    <i class="fa-solid fa-phone text-cyan-600"></i>
+                    <span>+254 712 345 678</span>
+                </a>
+                <button onclick="navigateTo('quote')" class="h-11 px-5 rounded-xl bg-gradient-to-r from-cyan-600 to-sky-500 hover:from-cyan-700 hover:to-sky-600 text-white font-semibold text-sm shadow-md shadow-cyan-500/20 active:scale-95 transition-all">
+                    Get Instant Quote
+                </button>
+            </div>
+
+            <!-- Mobile Hamburger Menu Button -->
+            <button id="mobile-menu-btn" onclick="toggleDrawer()" class="md:hidden w-11 h-11 rounded-xl bg-slate-100 flex items-center justify-center text-slate-700 hover:bg-slate-200 focus:outline-none active:scale-95 transition-all" aria-label="Toggle Menu">
+                <i class="fa-solid fa-bars text-xl" id="drawer-icon"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Side Drawer Overlay -->
+    <div id="drawer-backdrop" onclick="toggleDrawer()" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-50 opacity-0 pointer-events-none transition-opacity duration-300 md:hidden"></div>
+    
+    <!-- Mobile Side Drawer -->
+    <div id="drawer" class="fixed top-0 right-0 bottom-0 w-4/5 max-w-xs bg-white z-50 transform translate-x-full transition-transform duration-300 ease-out shadow-2xl flex flex-col justify-between p-6 md:hidden">
+        <div>
+            <div class="flex items-center justify-between pb-6 border-b border-slate-100">
+                <div class="flex items-center gap-2">
+                    <div class="w-8 h-8 rounded-lg bg-cyan-600 text-white font-bold flex items-center justify-center">J</div>
+                    <span class="font-bold text-slate-900">JosJos Menu</span>
+                </div>
+                <button onclick="toggleDrawer()" class="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-slate-500 hover:bg-slate-200">
+                    <i class="fa-solid fa-xmark text-lg"></i>
+                </button>
+            </div>
+
+            <nav class="flex flex-col gap-2 mt-6">
+                <button onclick="navigateTo('home'); toggleDrawer();" class="flex items-center gap-4 p-3.5 rounded-xl font-medium text-slate-700 hover:bg-slate-50 text-left active:bg-cyan-50 active:text-cyan-600">
+                    <i class="fa-solid fa-house w-6 text-cyan-600"></i> Home
+                </button>
+                <button onclick="navigateTo('products'); toggleDrawer();" class="flex items-center gap-4 p-3.5 rounded-xl font-medium text-slate-700 hover:bg-slate-50 text-left active:bg-cyan-50 active:text-cyan-600">
+                    <i class="fa-solid fa-shapes w-6 text-cyan-600"></i> Products & Catalog
+                </button>
+                <button onclick="navigateTo('services'); toggleDrawer();" class="flex items-center gap-4 p-3.5 rounded-xl font-medium text-slate-700 hover:bg-slate-50 text-left active:bg-cyan-50 active:text-cyan-600">
+                    <i class="fa-solid fa-screwdriver-wrench w-6 text-cyan-600"></i> Expert Services
+                </button>
+                <button onclick="navigateTo('portfolio'); toggleDrawer();" class="flex items-center gap-4 p-3.5 rounded-xl font-medium text-slate-700 hover:bg-slate-50 text-left active:bg-cyan-50 active:text-cyan-600">
+                    <i class="fa-solid fa-images w-6 text-cyan-600"></i> Project Gallery
+                </button>
+                <button onclick="navigateTo('faq'); toggleDrawer();" class="flex items-center gap-4 p-3.5 rounded-xl font-medium text-slate-700 hover:bg-slate-50 text-left active:bg-cyan-50 active:text-cyan-600">
+                    <i class="fa-solid fa-circle-question w-6 text-cyan-600"></i> FAQ
+                </button>
+                <button onclick="navigateTo('location'); toggleDrawer();" class="flex items-center gap-4 p-3.5 rounded-xl font-medium text-slate-700 hover:bg-slate-50 text-left active:bg-cyan-50 active:text-cyan-600">
+                    <i class="fa-solid fa-map-location-dot w-6 text-cyan-600"></i> Find Us in Eldoret
+                </button>
+                <button onclick="navigateTo('quote'); toggleDrawer();" class="flex items-center gap-4 p-3.5 rounded-xl font-medium text-slate-700 hover:bg-slate-50 text-left active:bg-cyan-50 active:text-cyan-600">
+                    <i class="fa-solid fa-calculator w-6 text-cyan-600"></i> Quote Estimator
+                </button>
+            </nav>
+        </div>
+
+        <div class="space-y-3 pt-6 border-t border-slate-100">
+            <a href="tel:+254712345678" class="w-full h-12 rounded-xl bg-slate-100 text-slate-800 font-semibold flex items-center justify-center gap-2 active:scale-98 transition-transform">
+                <i class="fa-solid fa-phone text-cyan-600"></i> Direct Call
+            </a>
+            <a href="https://wa.me/254712345678" target="_blank" class="w-full h-12 rounded-xl bg-emerald-500 text-white font-semibold flex items-center justify-center gap-2 active:scale-98 transition-transform shadow-lg shadow-emerald-500/20">
+                <i class="fa-brands fa-whatsapp text-xl"></i> WhatsApp Us
+            </a>
+        </div>
+    </div>
+
+    <!-- MAIN CONTENT CONTAINER -->
+    <main id="app-container" class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6">
+
+        <!-- ================= PAGE 1: HOME ================= -->
+        <section id="page-home" class="page-content space-y-12">
+            <!-- Hero Banner -->
+            <div class="relative rounded-3xl overflow-hidden bg-slate-900 text-white p-6 sm:p-12 shadow-2xl min-h-[480px] flex flex-col justify-center">
+                <div class="absolute inset-0 bg-cover bg-center opacity-40 mix-blend-overlay" style="background-image: url('assets/products/Window%20Installation%20%20Glass%20Replacement%20Process.jfif');"></div>
+                <div class="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-900/80 to-transparent"></div>
+                
+                <div class="relative z-10 max-w-2xl space-y-6">
+                    <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-cyan-500/20 border border-cyan-400/30 text-cyan-300 font-semibold text-xs tracking-wide uppercase">
+                        <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span> Certified Glass Master Technicians
+                    </span>
+                    <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-white leading-tight">
+                        Precision Architectural & Custom Glass Solutions
+                    </h1>
+                    <p class="text-slate-300 text-base sm:text-lg leading-relaxed">
+                        Transforming residential and commercial spaces with high-grade frameless glass, custom shower enclosures, energy-efficient windows, and custom mirror solutions.
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row gap-3 pt-2">
+                        <button onclick="navigateTo('quote')" class="h-12 px-6 rounded-2xl bg-gradient-to-r from-cyan-500 to-sky-500 hover:from-cyan-600 hover:to-sky-600 text-white font-bold text-base shadow-lg shadow-cyan-500/30 flex items-center justify-center gap-2 active:scale-95 transition-all">
+                            <i class="fa-solid fa-calculator"></i> Get Instant Quote
+                        </button>
+                        <button onclick="navigateTo('products')" class="h-12 px-6 rounded-2xl glass-panel text-white font-semibold text-base hover:bg-white/20 flex items-center justify-center gap-2 active:scale-95 transition-all border-white/20">
+                            Explore Catalog <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Access Mobile Feature Badges -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="p-4 rounded-2xl bg-white border border-slate-100 shadow-sm flex items-center gap-3">
+                    <div class="w-12 h-12 rounded-xl bg-cyan-50 text-cyan-600 flex items-center justify-center text-xl shrink-0">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-slate-900 text-sm">10-Yr Warranty</h4>
+                        <p class="text-xs text-slate-500">Tempered Safety</p>
+                    </div>
+                </div>
+                <div class="p-4 rounded-2xl bg-white border border-slate-100 shadow-sm flex items-center gap-3">
+                    <div class="w-12 h-12 rounded-xl bg-cyan-50 text-cyan-600 flex items-center justify-center text-xl shrink-0">
+                        <i class="fa-solid fa-truck-fast"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-slate-900 text-sm">24/7 Emergency</h4>
+                        <p class="text-xs text-slate-500">Fast Mobile Repair</p>
+                    </div>
+                </div>
+                <div class="p-4 rounded-2xl bg-white border border-slate-100 shadow-sm flex items-center gap-3">
+                    <div class="w-12 h-12 rounded-xl bg-cyan-50 text-cyan-600 flex items-center justify-center text-xl shrink-0">
+                        <i class="fa-solid fa-ruler-combined"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-slate-900 text-sm">Custom Cut</h4>
+                        <p class="text-xs text-slate-500">Laser Precision</p>
+                    </div>
+                </div>
+                <div class="p-4 rounded-2xl bg-white border border-slate-100 shadow-sm flex items-center gap-3">
+                    <div class="w-12 h-12 rounded-xl bg-cyan-50 text-cyan-600 flex items-center justify-center text-xl shrink-0">
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-slate-900 text-sm">4.9/5 Rating</h4>
+                        <p class="text-xs text-slate-500">500+ Local Reviews</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Touch-Friendly Highlight Carousel -->
+            <div class="space-y-4">
+                <div class="flex justify-between items-end">
+                    <div>
+                        <h2 class="text-xl sm:text-2xl font-bold text-slate-900">Featured Categories</h2>
+                        <p class="text-sm text-slate-500">Swipe or tap to explore solutions</p>
+                    </div>
+                    <button onclick="navigateTo('products')" class="text-xs font-bold text-cyan-600 hover:text-cyan-700 flex items-center gap-1">
+                        View All <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </button>
+                </div>
+
+                <!-- Swipeable Scroll Snap Container -->
+                <div class="flex gap-4 overflow-x-auto snap-x-mandatory no-scrollbar pb-4 -mx-4 px-4 sm:mx-0 sm:px-0">
+                    <div onclick="filterAndNavigateProducts('interior')" class="snap-center-item shrink-0 w-64 sm:w-72 bg-white rounded-2xl p-4 border border-slate-100 shadow-sm cursor-pointer hover:shadow-md transition-shadow">
+                        <div class="h-40 rounded-xl bg-slate-100 overflow-hidden relative mb-3">
+                            <img src="assets/products/Frameless%20Glass%20Shower%20Enclosure.jfif" class="w-full h-full object-cover" alt="Frameless Showers" loading="lazy">
+                        </div>
+                        <h3 class="font-bold text-slate-900">Frameless Showers</h3>
+                        <p class="text-xs text-slate-500 mt-1">Modern heavy-glass shower enclosures custom engineered.</p>
+                    </div>
+                    
+                    <div onclick="filterAndNavigateProducts('windows')" class="snap-center-item shrink-0 w-64 sm:w-72 bg-white rounded-2xl p-4 border border-slate-100 shadow-sm cursor-pointer hover:shadow-md transition-shadow">
+                        <div class="h-40 rounded-xl bg-slate-100 overflow-hidden relative mb-3">
+                            <img src="assets/products/Brown%20Tilt-and-Turn%20Window.jfif" class="w-full h-full object-cover" alt="Architectural Windows" loading="lazy">
+                        </div>
+                        <h3 class="font-bold text-slate-900">Energy-Efficient Windows</h3>
+                        <p class="text-xs text-slate-500 mt-1">Double & triple glazed Low-E glass replacement panels.</p>
+                    </div>
+
+                    <div onclick="filterAndNavigateProducts('commercial')" class="snap-center-item shrink-0 w-64 sm:w-72 bg-white rounded-2xl p-4 border border-slate-100 shadow-sm cursor-pointer hover:shadow-md transition-shadow">
+                        <div class="h-40 rounded-xl bg-slate-100 overflow-hidden relative mb-3">
+                            <img src="assets/products/Glass%20Office%20Partition%20System.jfif" class="w-full h-full object-cover" alt="Commercial Storefronts" loading="lazy">
+                        </div>
+                        <h3 class="font-bold text-slate-900">Commercial Storefronts</h3>
+                        <p class="text-xs text-slate-500 mt-1">Heavy-duty curtain walls and commercial glass doors.</p>
+                    </div>
+
+                    <div onclick="filterAndNavigateProducts('architectural')" class="snap-center-item shrink-0 w-64 sm:w-72 bg-white rounded-2xl p-4 border border-slate-100 shadow-sm cursor-pointer hover:shadow-md transition-shadow">
+                        <div class="h-40 rounded-xl bg-slate-100 overflow-hidden relative mb-3">
+                            <img src="assets/products/Glass%20Staircase%20Balustrade.jfif" class="w-full h-full object-cover" alt="Custom Mirrors & Railings" loading="lazy">
+                        </div>
+                        <h3 class="font-bold text-slate-900">Glass Railings & Mirrors</h3>
+                        <p class="text-xs text-slate-500 mt-1">Laminated balustrades and custom LED bathroom mirrors.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile-first Direct Contact Callout -->
+            <div class="rounded-3xl bg-gradient-to-br from-cyan-600 to-slate-900 text-white p-6 sm:p-8 flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl">
+                <div class="space-y-2 text-center md:text-left">
+                    <h3 class="text-2xl font-bold">Need Emergency Glass Repair?</h3>
+                    <p class="text-cyan-100 text-sm max-w-lg">Broken glass window or door? Our mobile team arrives with emergency board-up and measurement tools within 60 minutes.</p>
+                </div>
+                <div class="flex flex-col sm:flex-row gap-3 w-full md:w-auto">
+                    <a href="tel:+254712345678" class="h-12 px-6 rounded-2xl bg-white text-slate-900 font-bold flex items-center justify-center gap-2 hover:bg-slate-100 active:scale-95 transition-transform">
+                        <i class="fa-solid fa-phone text-cyan-600"></i> Call Immediately
+                    </a>
+                    <a href="https://wa.me/254712345678" target="_blank" class="h-12 px-6 rounded-2xl bg-emerald-500 text-white font-bold flex items-center justify-center gap-2 hover:bg-emerald-600 active:scale-95 transition-transform">
+                        <i class="fa-brands fa-whatsapp text-lg"></i> Send Photo on WhatsApp
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= PAGE 2: PRODUCTS ================= -->
+        <section id="page-products" class="page-content space-y-6 hidden">
+            <div class="space-y-2">
+                <h1 class="text-2xl sm:text-3xl font-extrabold text-slate-900">Custom Glass Products in Eldoret, Kenya</h1>
+                <p class="text-sm text-slate-500">Filter through certified architectural glass products and hardware for homes, offices, and commercial spaces across Eldoret and the Rift Valley.</p>
+            </div>
+
+            <!-- Search & Filter Controls -->
+            <div class="space-y-4">
+                <!-- Touch Search Bar -->
+                <div class="relative">
+                    <i class="fa-solid fa-magnifying-glass absolute left-4 top-1/2 -translate-y-1/2 text-slate-400"></i>
+                    <input type="text" id="catalog-search" oninput="filterProducts()" placeholder="Search products (e.g., Shower, Tempered, Low-E)..." class="w-full h-12 pl-11 pr-4 rounded-2xl bg-white border border-slate-200 text-sm focus:outline-none focus:border-cyan-500 focus:ring-2 focus:ring-cyan-500/20 shadow-sm transition-all">
+                </div>
+
+                <!-- Touch Pills Filter -->
+                <div class="flex items-center gap-2 overflow-x-auto no-scrollbar py-1 -mx-4 px-4 sm:mx-0 sm:px-0">
+                    <button onclick="setProductFilter('all')" class="product-filter-pill h-10 px-5 rounded-xl font-semibold text-xs whitespace-nowrap bg-cyan-600 text-white shadow-md shadow-cyan-600/20 transition-all active:scale-95" data-category="all">All Glass</button>
+                    <button onclick="setProductFilter('interior')" class="product-filter-pill h-10 px-5 rounded-xl font-semibold text-xs whitespace-nowrap bg-white border border-slate-200 text-slate-600 hover:bg-slate-50 transition-all active:scale-95" data-category="interior">Interior & Bath</button>
+                    <button onclick="setProductFilter('windows')" class="product-filter-pill h-10 px-5 rounded-xl font-semibold text-xs whitespace-nowrap bg-white border border-slate-200 text-slate-600 hover:bg-slate-50 transition-all active:scale-95" data-category="windows">Windows & Doors</button>
+                    <button onclick="setProductFilter('commercial')" class="product-filter-pill h-10 px-5 rounded-xl font-semibold text-xs whitespace-nowrap bg-white border border-slate-200 text-slate-600 hover:bg-slate-50 transition-all active:scale-95" data-category="commercial">Commercial</button>
+                    <button onclick="setProductFilter('architectural')" class="product-filter-pill h-10 px-5 rounded-xl font-semibold text-xs whitespace-nowrap bg-white border border-slate-200 text-slate-600 hover:bg-slate-50 transition-all active:scale-95" data-category="architectural">Architectural</button>
+                </div>
+            </div>
+
+            <!-- Product Grid -->
+            <div id="product-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- JS populated -->
+            </div>
+        </section>
+
+        <!-- ================= PAGE 3: SERVICES ================= -->
+        <section id="page-services" class="page-content space-y-8 hidden">
+            <div class="max-w-xl space-y-2">
+                <h1 class="text-2xl sm:text-3xl font-extrabold text-slate-900">Expert Glass Services</h1>
+                <p class="text-sm text-slate-500">From initial laser site measurements to clean professional installation.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Service 1 -->
+                <div class="p-6 rounded-3xl bg-white border border-slate-100 shadow-sm hover:shadow-md transition-all flex flex-col justify-between space-y-4">
+                    <div class="space-y-3">
+                        <div class="w-14 h-14 rounded-2xl bg-cyan-50 text-cyan-600 flex items-center justify-center text-2xl">
+                            <i class="fa-solid fa-shower"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900">Custom Frameless Shower Enclosures</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed">Precision custom glass shower doors, sliding systems, and walk-in screens using heavy 3/8" or 1/2" tempered safety glass with anti-water spot coatings.</p>
+                        <ul class="space-y-2 text-xs font-medium text-slate-500 pt-2">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-600"></i> Custom hardware finishes (Matte Black, Brass, Chrome)</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-600"></i> Hydrophobic EnduroShield surface protection</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-600"></i> Seamless laser measurement & leak-proof sealing</li>
+                        </ul>
+                    </div>
+                    <button onclick="navigateTo('quote')" class="w-full h-11 rounded-xl bg-slate-100 hover:bg-cyan-50 hover:text-cyan-600 font-semibold text-xs text-slate-700 transition-colors">Request Shower Quote</button>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="p-6 rounded-3xl bg-white border border-slate-100 shadow-sm hover:shadow-md transition-all flex flex-col justify-between space-y-4">
+                    <div class="space-y-3">
+                        <div class="w-14 h-14 rounded-2xl bg-cyan-50 text-cyan-600 flex items-center justify-center text-2xl">
+                            <i class="fa-solid fa-window-maximize"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900">Window Repair & Glass Replacement</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed">Fix foggy double-pane insulated windows, cracked glass, or worn seals without replacing the entire window frame.</p>
+                        <ul class="space-y-2 text-xs font-medium text-slate-500 pt-2">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-600"></i> Argon gas-filled Insulated Glass Units (IGU)</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-600"></i> Low-E energy saving solar glass upgrade</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-600"></i> Same-day emergency glass board-up</li>
+                        </ul>
+                    </div>
+                    <button onclick="navigateTo('quote')" class="w-full h-11 rounded-xl bg-slate-100 hover:bg-cyan-50 hover:text-cyan-600 font-semibold text-xs text-slate-700 transition-colors">Request Window Repair</button>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="p-6 rounded-3xl bg-white border border-slate-100 shadow-sm hover:shadow-md transition-all flex flex-col justify-between space-y-4">
+                    <div class="space-y-3">
+                        <div class="w-14 h-14 rounded-2xl bg-cyan-50 text-cyan-600 flex items-center justify-center text-2xl">
+                            <i class="fa-solid fa-building"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900">Commercial Storefront & Curtain Walls</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed">Commercial glass storefront installation, automatic sliding doors, security glass, and office glass partitions.</p>
+                        <ul class="space-y-2 text-xs font-medium text-slate-500 pt-2">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-600"></i> Laminated acoustic & bullet-resistant glass</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-600"></i> Heavy-duty storefront aluminum framing</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-600"></i> ADA compliant commercial door hardware</li>
+                        </ul>
+                    </div>
+                    <button onclick="navigateTo('quote')" class="w-full h-11 rounded-xl bg-slate-100 hover:bg-cyan-50 hover:text-cyan-600 font-semibold text-xs text-slate-700 transition-colors">Commercial Consultation</button>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="p-6 rounded-3xl bg-white border border-slate-100 shadow-sm hover:shadow-md transition-all flex flex-col justify-between space-y-4">
+                    <div class="space-y-3">
+                        <div class="w-14 h-14 rounded-2xl bg-cyan-50 text-cyan-600 flex items-center justify-center text-2xl">
+                            <i class="fa-solid fa-vector-square"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900">Custom Mirrors & Glass Table Tops</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed">Custom cut wall mirrors, gym mirrors, back-lit LED vanity mirrors, and protective glass tops for dining and office tables.</p>
+                        <ul class="space-y-2 text-xs font-medium text-slate-500 pt-2">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-600"></i> Beveled edge & polished edge options</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-600"></i> Antique, tinted, and ultra-clear low-iron glass</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-600"></i> Custom outlet & switch cutout processing</li>
+                        </ul>
+                    </div>
+                    <button onclick="navigateTo('quote')" class="w-full h-11 rounded-xl bg-slate-100 hover:bg-cyan-50 hover:text-cyan-600 font-semibold text-xs text-slate-700 transition-colors">Get Custom Cut Quote</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= LOCATION & DIRECTIONS ================= -->
+        <section class="page-content space-y-6 hidden" id="page-location">
+            <div class="space-y-2">
+                <h1 class="text-2xl sm:text-3xl font-extrabold text-slate-900">Visit Our Eldoret Showroom</h1>
+                <p class="text-sm text-slate-500">Find the JosJos Glass Experts team in Eldoret, Kenya and get turn-by-turn directions to our business.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-5 gap-6">
+                <div class="lg:col-span-2 bg-white rounded-3xl border border-slate-100 shadow-sm p-6 space-y-5">
+                    <div class="space-y-3">
+                        <div class="inline-flex items-center gap-2 rounded-full bg-cyan-50 px-3 py-1.5 text-[10px] font-bold uppercase tracking-[0.2em] text-cyan-700"><i class="fa-solid fa-location-dot"></i> Eldoret, Kenya</div>
+                        <h2 class="text-xl font-bold text-slate-900">JosJos Glass Experts</h2>
+                        <p class="text-sm text-slate-600 leading-relaxed">Serving homes, offices, hotels, and retail spaces across Eldoret and the wider Rift Valley region with custom glass fabrication, installation, and repair.</p>
+                    </div>
+
+                    <div class="space-y-3 text-sm text-slate-700">
+                        <div class="flex items-start gap-3"><i class="fa-solid fa-map-location-dot text-cyan-600 mt-1"></i><span>Business location: Eldoret Town, Uasin Gishu County, Kenya</span></div>
+                        <div class="flex items-start gap-3"><i class="fa-solid fa-phone text-cyan-600 mt-1"></i><a href="tel:+254712345678" class="hover:text-cyan-600">+254 712 345 678</a></div>
+                        <div class="flex items-start gap-3"><i class="fa-brands fa-whatsapp text-cyan-600 mt-1"></i><a href="https://wa.me/254712345678" target="_blank" class="hover:text-cyan-600">WhatsApp us for fast quotes</a></div>
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row gap-3">
+                        <a href="https://www.google.com/maps/dir/?api=1&destination=Eldoret%20Kenya" target="_blank" class="flex-1 h-12 rounded-xl bg-cyan-600 text-white font-bold text-sm flex items-center justify-center gap-2 hover:bg-cyan-700 active:scale-95 transition-transform"><i class="fa-solid fa-route"></i> Get Directions</a>
+                        <a href="https://maps.google.com/?q=Eldoret%20Kenya" target="_blank" class="flex-1 h-12 rounded-xl bg-slate-100 text-slate-800 font-bold text-sm flex items-center justify-center gap-2 hover:bg-slate-200 active:scale-95 transition-transform"><i class="fa-solid fa-location-arrow"></i> Open in Maps</a>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-3 overflow-hidden rounded-3xl border border-slate-200 shadow-sm bg-white">
+                    <iframe
+                        src="https://www.google.com/maps?q=Eldoret%20Kenya&z=12&output=embed"
+                        class="w-full h-[340px] border-0"
+                        loading="lazy"
+                        allowfullscreen
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="JosJos Glass Experts in Eldoret">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= FAQ / AEO CONTENT ================= -->
+        <section class="page-content space-y-6 hidden" id="page-faq">
+            <div class="space-y-2">
+                <h1 class="text-2xl sm:text-3xl font-extrabold text-slate-900">Glass FAQs for Homeowners and Businesses in Eldoret</h1>
+                <p class="text-sm text-slate-500">Answers to common questions about shower glass, glass replacement, mirrors, balustrades, and commercial installation.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <div class="bg-white rounded-3xl border border-slate-100 shadow-sm p-6 space-y-4">
+                    <h2 class="text-lg font-bold text-slate-900">What types of glass do you install in Eldoret?</h2>
+                    <p class="text-sm text-slate-600 leading-relaxed">We install frameless shower glass, tempered windows, low-E glass panels, laminated balustrades, custom mirrors, office partitions, and commercial storefront glazing for residential and business spaces.</p>
+                </div>
+                <div class="bg-white rounded-3xl border border-slate-100 shadow-sm p-6 space-y-4">
+                    <h2 class="text-lg font-bold text-slate-900">Do you offer glass repair and replacement in Kenya?</h2>
+                    <p class="text-sm text-slate-600 leading-relaxed">Yes. We handle emergency glass replacement, cracked window glass repair, shower door fixes, and custom glass fabrication for homes and commercial properties throughout Eldoret.</p>
+                </div>
+                <div class="bg-white rounded-3xl border border-slate-100 shadow-sm p-6 space-y-4">
+                    <h2 class="text-lg font-bold text-slate-900">Can I get a custom quote for a shower enclosure or mirror?</h2>
+                    <p class="text-sm text-slate-600 leading-relaxed">Absolutely. Share your dimensions and preferred design, and our team will provide an estimate based on the glass type, thickness, finish, and installation requirements.</p>
+                </div>
+                <div class="bg-white rounded-3xl border border-slate-100 shadow-sm p-6 space-y-4">
+                    <h2 class="text-lg font-bold text-slate-900">Do you work on commercial glass projects?</h2>
+                    <p class="text-sm text-slate-600 leading-relaxed">We design and install commercial glazing systems, office partitions, storefronts, and architectural glass features for businesses in Eldoret and nearby towns.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= PAGE 4: PORTFOLIO ================= -->
+        <section id="page-portfolio" class="page-content space-y-6 hidden">
+            <div class="space-y-2">
+                <h1 class="text-2xl sm:text-3xl font-extrabold text-slate-900">Project Gallery</h1>
+                <p class="text-sm text-slate-500">Explore our recent completed projects for homes and businesses.</p>
+            </div>
+
+            <!-- Filter Pills for Gallery -->
+            <div class="flex items-center gap-2 overflow-x-auto no-scrollbar py-1 -mx-4 px-4 sm:mx-0 sm:px-0">
+                <button onclick="filterPortfolio('all')" class="portfolio-pill h-10 px-5 rounded-xl font-semibold text-xs whitespace-nowrap bg-cyan-600 text-white shadow-md shadow-cyan-600/20" data-gallery="all">All Projects</button>
+                <button onclick="filterPortfolio('residential')" class="portfolio-pill h-10 px-5 rounded-xl font-semibold text-xs whitespace-nowrap bg-white border border-slate-200 text-slate-600" data-gallery="residential">Residential Showers</button>
+                <button onclick="filterPortfolio('commercial')" class="portfolio-pill h-10 px-5 rounded-xl font-semibold text-xs whitespace-nowrap bg-white border border-slate-200 text-slate-600" data-gallery="commercial">Commercial Buildings</button>
+                <button onclick="filterPortfolio('architectural')" class="portfolio-pill h-10 px-5 rounded-xl font-semibold text-xs whitespace-nowrap bg-white border border-slate-200 text-slate-600" data-gallery="architectural">Railings & Mirrors</button>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div id="portfolio-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- JS populated -->
+            </div>
+        </section>
+
+        <!-- ================= PAGE 5: QUOTE CALCULATOR ================= -->
+        <section id="page-quote" class="page-content space-y-8 hidden">
+            <div class="max-w-xl space-y-2">
+                <h1 class="text-2xl sm:text-3xl font-extrabold text-slate-900">Interactive Glass Calculator</h1>
+                <p class="text-sm text-slate-500">Configure your custom glass specifications for an instant cost estimate.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                <!-- Form & Controls -->
+                <div class="lg:col-span-7 bg-white p-6 sm:p-8 rounded-3xl border border-slate-100 shadow-xl space-y-6">
+                    
+                    <!-- Step 1: Select Application Type -->
+                    <div class="space-y-3">
+                        <label class="block font-bold text-slate-900 text-sm">1. Glass Application Type</label>
+                        <div class="grid grid-cols-2 sm:grid-cols-3 gap-2.5">
+                            <button type="button" onclick="selectCalcType('shower', 45)" class="calc-type-btn p-3.5 rounded-2xl border-2 border-cyan-600 bg-cyan-50/50 text-cyan-700 font-semibold text-xs flex flex-col items-center gap-2 active:scale-95 transition-all" data-type="shower">
+                                <i class="fa-solid fa-shower text-xl"></i> Shower Glass
+                            </button>
+                            <button type="button" onclick="selectCalcType('window', 30)" class="calc-type-btn p-3.5 rounded-2xl border-2 border-slate-100 bg-white text-slate-600 hover:border-slate-300 font-semibold text-xs flex flex-col items-center gap-2 active:scale-95 transition-all" data-type="window">
+                                <i class="fa-solid fa-window-maximize text-xl"></i> Window Unit
+                            </button>
+                            <button type="button" onclick="selectCalcType('mirror', 25)" class="calc-type-btn p-3.5 rounded-2xl border-2 border-slate-100 bg-white text-slate-600 hover:border-slate-300 font-semibold text-xs flex flex-col items-center gap-2 active:scale-95 transition-all" data-type="mirror">
+                                <i class="fa-solid fa-vector-square text-xl"></i> Custom Mirror
+                            </button>
+                            <button type="button" onclick="selectCalcType('railing', 60)" class="calc-type-btn p-3.5 rounded-2xl border-2 border-slate-100 bg-white text-slate-600 hover:border-slate-300 font-semibold text-xs flex flex-col items-center gap-2 active:scale-95 transition-all" data-type="railing">
+                                <i class="fa-solid fa-shield text-xl"></i> Balustrade
+                            </button>
+                            <button type="button" onclick="selectCalcType('table', 20)" class="calc-type-btn p-3.5 rounded-2xl border-2 border-slate-100 bg-white text-slate-600 hover:border-slate-300 font-semibold text-xs flex flex-col items-center gap-2 active:scale-95 transition-all" data-type="table">
+                                <i class="fa-solid fa-table-cells text-xl"></i> Table Top
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Step 2: Dimensions Touch Sliders -->
+                    <div class="space-y-5 pt-2 border-t border-slate-100">
+                        <label class="block font-bold text-slate-900 text-sm">2. Dimensions (Inches)</label>
+                        
+                        <!-- Width Slider -->
+                        <div class="space-y-2">
+                            <div class="flex justify-between items-center text-xs">
+                                <span class="font-medium text-slate-600">Width</span>
+                                <span class="font-bold text-cyan-600 text-base" id="width-val">36 in</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <button type="button" onclick="adjustSlider('width', -1)" class="w-10 h-10 rounded-xl bg-slate-100 text-slate-700 font-bold text-lg flex items-center justify-center active:scale-95 shrink-0">-</button>
+                                <input type="range" id="width-slider" min="12" max="144" value="36" oninput="updateCalculation()" class="flex-grow">
+                                <button type="button" onclick="adjustSlider('width', 1)" class="w-10 h-10 rounded-xl bg-slate-100 text-slate-700 font-bold text-lg flex items-center justify-center active:scale-95 shrink-0">+</button>
+                            </div>
+                        </div>
+
+                        <!-- Height Slider -->
+                        <div class="space-y-2">
+                            <div class="flex justify-between items-center text-xs">
+                                <span class="font-medium text-slate-600">Height</span>
+                                <span class="font-bold text-cyan-600 text-base" id="height-val">72 in</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <button type="button" onclick="adjustSlider('height', -1)" class="w-10 h-10 rounded-xl bg-slate-100 text-slate-700 font-bold text-lg flex items-center justify-center active:scale-95 shrink-0">-</button>
+                                <input type="range" id="height-slider" min="12" max="120" value="72" oninput="updateCalculation()" class="flex-grow">
+                                <button type="button" onclick="adjustSlider('height', 1)" class="w-10 h-10 rounded-xl bg-slate-100 text-slate-700 font-bold text-lg flex items-center justify-center active:scale-95 shrink-0">+</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 3: Glass Thickness Chips -->
+                    <div class="space-y-3 pt-2 border-t border-slate-100">
+                        <label class="block font-bold text-slate-900 text-sm">3. Glass Thickness</label>
+                        <div class="grid grid-cols-3 gap-2.5">
+                            <button type="button" onclick="selectThickness('1/4&quot;', 1.0)" class="thickness-btn p-3 rounded-xl border-2 border-slate-100 bg-white font-semibold text-xs text-slate-700 active:scale-95" data-thick="1/4&quot;">1/4" (6mm)</button>
+                            <button type="button" onclick="selectThickness('3/8&quot;', 1.3)" class="thickness-btn p-3 rounded-xl border-2 border-cyan-600 bg-cyan-50/50 text-cyan-700 font-semibold text-xs active:scale-95" data-thick="3/8&quot;">3/8" (10mm)</button>
+                            <button type="button" onclick="selectThickness('1/2&quot;', 1.6)" class="thickness-btn p-3 rounded-xl border-2 border-slate-100 bg-white font-semibold text-xs text-slate-700 active:scale-95" data-thick="1/2&quot;">1/2" (12mm)</button>
+                        </div>
+                    </div>
+
+                    <!-- Step 4: Glass Finish Options -->
+                    <div class="space-y-3 pt-2 border-t border-slate-100">
+                        <label class="block font-bold text-slate-900 text-sm">4. Glass Finish / Treatment</label>
+                        <div class="grid grid-cols-2 gap-2.5">
+                            <button type="button" onclick="selectFinish('Clear Standard', 1.0)" class="finish-btn p-3 rounded-xl border-2 border-cyan-600 bg-cyan-50/50 text-cyan-700 font-semibold text-xs active:scale-95" data-finish="Clear Standard">Clear Tempered</button>
+                            <button type="button" onclick="selectFinish('Ultra-Clear Low Iron', 1.25)" class="finish-btn p-3 rounded-xl border-2 border-slate-100 bg-white font-semibold text-xs text-slate-700 active:scale-95" data-finish="Ultra-Clear Low Iron">Ultra-Clear (Starphire)</button>
+                            <button type="button" onclick="selectFinish('Frosted / Acid Etched', 1.20)" class="finish-btn p-3 rounded-xl border-2 border-slate-100 bg-white font-semibold text-xs text-slate-700 active:scale-95" data-finish="Frosted / Acid Etched">Frosted / Privacy</button>
+                            <button type="button" onclick="selectFinish('Tinted (Bronze/Grey)', 1.15)" class="finish-btn p-3 rounded-xl border-2 border-slate-100 bg-white font-semibold text-xs text-slate-700 active:scale-95" data-finish="Tinted (Bronze/Grey)">Tinted Grey/Bronze</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Live Summary & Direct Booking Box -->
+                <div class="lg:col-span-5 bg-slate-900 text-white p-6 sm:p-8 rounded-3xl shadow-2xl space-y-6 sticky top-20">
+                    <div class="flex items-center justify-between border-b border-slate-800 pb-4">
+                        <span class="text-xs font-semibold uppercase tracking-wider text-cyan-400">Estimated Total</span>
+                        <span class="text-3xl font-extrabold text-white" id="calc-price">KSh 0</span>
+                    </div>
+
+                    <div class="space-y-3 text-xs text-slate-300">
+                        <div class="flex justify-between">
+                            <span>Selected Application:</span>
+                            <span class="font-bold text-white" id="summary-app">Shower Glass</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Dimensions:</span>
+                            <span class="font-bold text-white" id="summary-dim">36" W x 72" H (18.0 sq ft)</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Thickness:</span>
+                            <span class="font-bold text-white" id="summary-thick">3/8" (10mm)</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Glass Finish:</span>
+                            <span class="font-bold text-white" id="summary-finish">Clear Tempered</span>
+                        </div>
+                        <div class="flex justify-between border-t border-slate-800 pt-3 text-emerald-400">
+                            <span>Estimated Lead Time:</span>
+                            <span class="font-bold">3 - 5 Business Days</span>
+                        </div>
+                    </div>
+
+                    <!-- Customer Contact Quick Inputs -->
+                    <div class="space-y-3 pt-2">
+                        <label class="block font-semibold text-xs text-slate-300">Send Estimate to Mobile / WhatsApp</label>
+                        <input type="text" id="quote-name" placeholder="Your Full Name" class="w-full h-11 px-4 rounded-xl bg-slate-800 border border-slate-700 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500">
+                        <input type="tel" id="quote-phone" placeholder="Phone Number" class="w-full h-11 px-4 rounded-xl bg-slate-800 border border-slate-700 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500">
+                    </div>
+
+                    <!-- Submit CTAs -->
+                    <div class="space-y-3 pt-2">
+                        <button onclick="sendWhatsAppQuote()" class="w-full h-12 rounded-xl bg-emerald-500 hover:bg-emerald-600 text-white font-bold text-sm flex items-center justify-center gap-2 active:scale-95 transition-transform shadow-lg shadow-emerald-500/20">
+                            <i class="fa-brands fa-whatsapp text-lg"></i> Send Estimate via WhatsApp
+                        </button>
+                        <button onclick="submitQuoteForm()" class="w-full h-12 rounded-xl bg-cyan-600 hover:bg-cyan-700 text-white font-bold text-sm flex items-center justify-center gap-2 active:scale-95 transition-transform">
+                            <i class="fa-solid fa-paper-plane"></i> Submit Formal Request
+                        </button>
+                    </div>
+
+                    <p class="text-[10px] text-slate-500 text-center">*Final quotes are subject to physical site measurement by our technicians.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- QUICK VIEW MODAL FOR PRODUCTS & PORTFOLIO -->
+    <div id="quickview-modal" class="fixed inset-0 z-50 bg-slate-900/75 backdrop-blur-sm hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-3xl max-w-lg w-full overflow-hidden shadow-2xl space-y-4 animate-in fade-in zoom-in duration-200">
+            <div class="relative h-60 bg-slate-100">
+                <img id="modal-img" src="" class="w-full h-full object-cover" alt="Detail View">
+                <button onclick="closeModal()" class="absolute top-4 right-4 w-9 h-9 rounded-full bg-white/80 backdrop-blur text-slate-700 flex items-center justify-center hover:bg-white shadow">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <div class="p-6 space-y-4">
+                <div>
+                    <span id="modal-badge" class="px-3 py-1 rounded-full bg-cyan-50 text-cyan-600 font-bold text-[10px] uppercase tracking-wider">Category</span>
+                    <h3 id="modal-title" class="text-xl font-bold text-slate-900 mt-1">Product Title</h3>
+                </div>
+                <p id="modal-desc" class="text-xs text-slate-600 leading-relaxed">Detailed description will appear here.</p>
+                <div class="pt-2 flex gap-3">
+                    <button onclick="closeModal(); navigateTo('quote');" class="flex-1 h-11 rounded-xl bg-cyan-600 text-white font-bold text-xs hover:bg-cyan-700 active:scale-95 transition-all">Get Quote For This</button>
+                    <a id="modal-call-btn" href="tel:+254712345678" class="h-11 px-4 rounded-xl bg-slate-100 text-slate-700 font-bold text-xs flex items-center gap-2 hover:bg-slate-200">
+                        <i class="fa-solid fa-phone text-cyan-600"></i> Call
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MOBILE STICKY BOTTOM NAVIGATION BAR -->
+    <nav class="fixed bottom-0 left-0 right-0 z-40 bg-white/90 backdrop-blur-md border-t border-slate-200/80 md:hidden h-16 px-2 flex items-center justify-around shadow-lg">
+        <button onclick="navigateTo('home')" class="mobile-nav-btn flex flex-col items-center justify-center w-14 h-12 rounded-xl text-cyan-600 font-semibold transition-colors" data-page="home">
+            <i class="fa-solid fa-house text-lg"></i>
+            <span class="text-[10px] mt-0.5">Home</span>
+        </button>
+        <button onclick="navigateTo('products')" class="mobile-nav-btn flex flex-col items-center justify-center w-14 h-12 rounded-xl text-slate-400 font-semibold transition-colors" data-page="products">
+            <i class="fa-solid fa-shapes text-lg"></i>
+            <span class="text-[10px] mt-0.5">Products</span>
+        </button>
+        <button onclick="navigateTo('services')" class="mobile-nav-btn flex flex-col items-center justify-center w-14 h-12 rounded-xl text-slate-400 font-semibold transition-colors" data-page="services">
+            <i class="fa-solid fa-screwdriver-wrench text-lg"></i>
+            <span class="text-[10px] mt-0.5">Services</span>
+        </button>
+        <button onclick="navigateTo('portfolio')" class="mobile-nav-btn flex flex-col items-center justify-center w-14 h-12 rounded-xl text-slate-400 font-semibold transition-colors" data-page="portfolio">
+            <i class="fa-solid fa-images text-lg"></i>
+            <span class="text-[10px] mt-0.5">Portfolio</span>
+        </button>
+        <button onclick="navigateTo('faq')" class="mobile-nav-btn flex flex-col items-center justify-center w-14 h-12 rounded-xl text-slate-400 font-semibold transition-colors" data-page="faq">
+            <i class="fa-solid fa-circle-question text-lg"></i>
+            <span class="text-[10px] mt-0.5">FAQ</span>
+        </button>
+        <button onclick="navigateTo('location')" class="mobile-nav-btn flex flex-col items-center justify-center w-14 h-12 rounded-xl text-slate-400 font-semibold transition-colors" data-page="location">
+            <i class="fa-solid fa-location-dot text-lg"></i>
+            <span class="text-[10px] mt-0.5">Location</span>
+        </button>
+        <button onclick="navigateTo('quote')" class="mobile-nav-btn flex flex-col items-center justify-center w-14 h-12 rounded-xl text-slate-400 font-semibold transition-colors" data-page="quote">
+            <i class="fa-solid fa-calculator text-lg"></i>
+            <span class="text-[10px] mt-0.5">Quote</span>
+        </button>
+    </nav>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-900 text-slate-400 text-xs py-10 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-4 border-b border-slate-800 pb-6">
+                <div class="flex items-center gap-2">
+                    <img src="assets/logos/logo.jpeg" alt="JosJos Glass Experts logo" class="w-8 h-8 rounded-lg object-cover shadow-md shadow-cyan-500/20">
+                    <span class="font-bold text-white text-base">JosJos Glass Experts</span>
+                </div>
+                <div class="flex gap-6 text-sm">
+                    <a href="#" onclick="navigateTo('home'); return false;" class="hover:text-white">Home</a>
+                    <a href="#" onclick="navigateTo('products'); return false;" class="hover:text-white">Products</a>
+                    <a href="#" onclick="navigateTo('services'); return false;" class="hover:text-white">Services</a>
+                    <a href="#" onclick="navigateTo('portfolio'); return false;" class="hover:text-white">Portfolio</a>
+                    <a href="#" onclick="navigateTo('faq'); return false;" class="hover:text-white">FAQ</a>
+                    <a href="#" onclick="navigateTo('location'); return false;" class="hover:text-white">Location</a>
+                    <a href="#" onclick="navigateTo('quote'); return false;" class="hover:text-white">Quote Calculator</a>
+                </div>
+            </div>
+            <div class="flex flex-col sm:flex-row justify-between items-center gap-4 text-[11px] text-slate-500">
+                <p>&copy; 2026 JosJos Glass Experts LLC. All rights reserved. Custom Architectural Glass Solutions.</p>
+                <div class="flex gap-4">
+                    <span>Privacy Policy</span>
+                    <span>Terms of Service</span>
+                    <span>Safety Certified</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          "name": "JosJos Glass Experts",
+          "description": "Custom architectural and interior glass solutions in Eldoret, Kenya, including shower enclosures, window replacement, mirrors, balustrades, and commercial glass installation.",
+          "telephone": "+254712345678",
+          "areaServed": ["Eldoret", "Uasin Gishu County", "Rift Valley", "Kenya"],
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Eldoret",
+            "addressRegion": "Uasin Gishu County",
+            "addressCountry": "KE"
+          },
+          "priceRange": "KES KSh",
+          "sameAs": [
+            "https://wa.me/254712345678"
+          ],
+          "keywords": "glass company Eldoret, shower doors Kenya, window replacement Kenya, custom mirrors Eldoret, commercial glass installation Kenya"
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What types of glass do you install in Eldoret?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "We install frameless shower glass, tempered windows, low-E glass panels, laminated balustrades, custom mirrors, office partitions, and commercial storefront glazing for residential and business spaces."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do you offer glass repair and replacement in Kenya?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. We handle emergency glass replacement, cracked window glass repair, shower door fixes, and custom glass fabrication for homes and commercial properties throughout Eldoret."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I get a custom quote for a shower enclosure or mirror?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Absolutely. Share your dimensions and preferred design, and our team will provide an estimate based on the glass type, thickness, finish, and installation requirements."
+              }
+            }
+          ]
+        }
+    </script>
+    <script>
+        /* Product Data */
+        const productsData = [
+            {
+                id: 1,
+                name: "Frameless Sliding Shower Door",
+                category: "interior",
+                price: "From KSh 24,500",
+                img: "assets/products/Frameless%20Glass%20Shower%20Enclosure.jfif",
+                desc: "Heavy 3/8 inch tempered glass with stainless steel roller hardware. Custom cut for tub or shower enclosure."
+            },
+            {
+                id: 2,
+                name: "Low-E Double Pane Window Glass",
+                category: "windows",
+                price: "From KSh 8,500",
+                img: "assets/products/Brown%20Tilt-and-Turn%20Window.jfif",
+                desc: "Energy Star insulated glass replacement unit filled with argon gas for maximum thermal efficiency."
+            },
+            {
+                id: 3,
+                name: "Commercial Aluminum Storefront",
+                category: "commercial",
+                price: "Custom Estimate",
+                img: "assets/products/Glass%20Office%20Partition%20System.jfif",
+                desc: "Heavy-duty commercial glass entrance system engineered for high traffic and safety standards."
+            },
+            {
+                id: 4,
+                name: "Frameless Glass Deck Railing",
+                category: "architectural",
+                price: "From KSh 11,500/ft",
+                img: "assets/products/Glass%20Staircase%20Balustrade.jfif",
+                desc: "Laminated 1/2 inch safety glass balustrades offering unobstructed views for balconies and stairs."
+            },
+            {
+                id: 5,
+                name: "Backlit LED Bathroom Mirror",
+                category: "interior",
+                price: "From KSh 18,000",
+                img: "assets/products/Circular%20Backlit%20LED%20Mirror.jfif",
+                desc: "Smart touch control copper-free mirror with anti-fog heating pad and dimmable LED ring."
+            },
+            {
+                id: 6,
+                name: "Acoustic Laminated Office Partition",
+                category: "commercial",
+                price: "From KSh 33,000",
+                img: "assets/products/Gemini_Generated_Image_qfsdq1qfsdq1qfsd.jfif",
+                desc: "Sound-dampening laminated interior wall panels for corporate meeting rooms and executive offices."
+            }
+        ];
+
+        /* Portfolio Data */
+        const portfolioData = [
+            {
+                id: 101,
+                title: "Luxury Master Suite Enclosure",
+                category: "residential",
+                location: "Westside Heights",
+                img: "assets/products/Frameless%20Glass%20Shower%20Enclosure.jfif",
+                desc: "Custom corner frameless glass enclosure with matte black hardware and ultra-clear low-iron glass."
+            },
+            {
+                id: 102,
+                title: "Downtown Tech Office Facade",
+                category: "commercial",
+                location: "Financial District",
+                img: "assets/products/Glass%20Office%20Partition%20System.jfif",
+                desc: "Full glass curtain wall installation spanning 3 floors with solar tint control glass."
+            },
+            {
+                id: 103,
+                title: "Oceanfront Glass Balustrade",
+                category: "architectural",
+                location: "Marina Bay",
+                img: "assets/products/Glass%20Staircase%20Balustrade.jfif",
+                desc: "Base-shoe structural glass railing system withstands high wind loads while maintaining ocean views."
+            },
+            {
+                id: 104,
+                title: "Full Gym Wall Mirror Array",
+                category: "residential",
+                location: "Oakridge Estate",
+                img: "assets/products/Rectangular%20Backlit%20LED%20Mirror.jfif",
+                desc: "Seamless floor-to-ceiling mirror installation with custom safety backing and cutout for outlets."
+            }
+        ];
+
+        /* State Variables */
+        let activePage = 'home';
+        let currentProductCategory = 'all';
+        let currentPortfolioCategory = 'all';
+
+        // Calculator State
+        let calcState = {
+            basePriceSqFt: 45,
+            width: 36,
+            height: 72,
+            thicknessMultiplier: 1.3,
+            finishMultiplier: 1.0,
+            appName: 'Shower Glass',
+            thickName: '3/8"',
+            finishName: 'Clear Standard'
+        };
+
+        // Single Page Navigation Function
+        function navigateTo(pageId) {
+            activePage = pageId;
+
+            // Hide all pages
+            document.querySelectorAll('.page-content').forEach(page => {
+                page.classList.add('hidden');
+            });
+
+            // Show selected page
+            const targetPage = document.getElementById(`page-${pageId}`);
+            if (targetPage) {
+                targetPage.classList.remove('hidden');
+            }
+
+            // Update top header active link states
+            document.querySelectorAll('.nav-link').forEach(link => {
+                if (link.dataset.page === pageId) {
+                    link.classList.add('text-cyan-600', 'bg-cyan-50');
+                    link.classList.remove('text-slate-600');
+                } else {
+                    link.classList.remove('text-cyan-600', 'bg-cyan-50');
+                    link.classList.add('text-slate-600');
+                }
+            });
+
+            // Update mobile bottom nav active states
+            document.querySelectorAll('.mobile-nav-btn').forEach(btn => {
+                if (btn.dataset.page === pageId) {
+                    btn.classList.add('text-cyan-600');
+                    btn.classList.remove('text-slate-400');
+                } else {
+                    btn.classList.remove('text-cyan-600');
+                    btn.classList.add('text-slate-400');
+                }
+            });
+
+            // Scroll top smoothly
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Toggle Drawer Mobile Menu
+        function toggleDrawer() {
+            const drawer = document.getElementById('drawer');
+            const backdrop = document.getElementById('drawer-backdrop');
+            const isOpened = !drawer.classList.contains('translate-x-full');
+
+            if (isOpened) {
+                drawer.classList.add('translate-x-full');
+                backdrop.classList.add('opacity-0', 'pointer-events-none');
+            } else {
+                drawer.classList.remove('translate-x-full');
+                backdrop.classList.remove('opacity-0', 'pointer-events-none');
+            }
+        }
+
+        // Filter & Render Products
+        function renderProducts() {
+            const grid = document.getElementById('product-grid');
+            const searchQuery = document.getElementById('catalog-search')?.value.toLowerCase() || '';
+
+            const filtered = productsData.filter(item => {
+                const matchesCategory = currentProductCategory === 'all' || item.category === currentProductCategory;
+                const matchesSearch = item.name.toLowerCase().includes(searchQuery) || item.desc.toLowerCase().includes(searchQuery);
+                return matchesCategory && matchesSearch;
+            });
+
+            if (filtered.length === 0) {
+                grid.innerHTML = `
+                    <div class="col-span-full py-12 text-center text-slate-400">
+                        <i class="fa-solid fa-box-open text-4xl mb-2"></i>
+                        <p>No products found matching your search criteria.</p>
+                    </div>
+                `;
+                return;
+            }
+
+            grid.innerHTML = filtered.map(item => `
+                <div class="bg-white rounded-3xl border border-slate-100 shadow-sm overflow-hidden hover:shadow-md transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="h-48 bg-slate-100 overflow-hidden relative">
+                            <img src="${item.img}" class="w-full h-full object-cover" alt="${item.name}" loading="lazy">
+                            <span class="absolute top-3 left-3 px-3 py-1 bg-white/90 backdrop-blur rounded-full text-[10px] font-bold text-slate-800 uppercase tracking-wider">${item.category}</span>
+                        </div>
+                        <div class="p-5 space-y-2">
+                            <h3 class="font-bold text-slate-900 text-base">${item.name}</h3>
+                            <p class="text-xs text-slate-500 line-clamp-2">${item.desc}</p>
+                        </div>
+                    </div>
+                    <div class="p-5 pt-0 flex items-center justify-between border-t border-slate-50 mt-2">
+                        <span class="font-bold text-cyan-600 text-sm">${item.price}</span>
+                        <button onclick="openModal(${item.id}, 'product')" class="h-10 px-4 rounded-xl bg-slate-100 text-slate-800 font-semibold text-xs hover:bg-cyan-50 hover:text-cyan-600 transition-colors">Quick View</button>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function setProductFilter(category) {
+            currentProductCategory = category;
+            document.querySelectorAll('.product-filter-pill').forEach(btn => {
+                if (btn.dataset.category === category) {
+                    btn.className = 'product-filter-pill h-10 px-5 rounded-xl font-semibold text-xs whitespace-nowrap bg-cyan-600 text-white shadow-md shadow-cyan-600/20 transition-all active:scale-95';
+                } else {
+                    btn.className = 'product-filter-pill h-10 px-5 rounded-xl font-semibold text-xs whitespace-nowrap bg-white border border-slate-200 text-slate-600 hover:bg-slate-50 transition-all active:scale-95';
+                }
+            });
+            renderProducts();
+        }
+
+        function filterProducts() {
+            renderProducts();
+        }
+
+        function filterAndNavigateProducts(category) {
+            setProductFilter(category);
+            navigateTo('products');
+        }
+
+        // Filter & Render Portfolio
+        function renderPortfolio() {
+            const grid = document.getElementById('portfolio-grid');
+            const filtered = portfolioData.filter(item => currentPortfolioCategory === 'all' || item.category === currentPortfolioCategory);
+
+            grid.innerHTML = filtered.map(item => `
+                <div class="bg-white rounded-3xl border border-slate-100 shadow-sm overflow-hidden hover:shadow-md transition-all">
+                    <div class="h-52 bg-slate-100 overflow-hidden relative">
+                        <img src="${item.img}" class="w-full h-full object-cover" alt="${item.title}" loading="lazy">
+                        <span class="absolute top-3 left-3 px-3 py-1 bg-slate-900/80 backdrop-blur text-white rounded-full text-[10px] font-bold uppercase tracking-wider">${item.location}</span>
+                    </div>
+                    <div class="p-5 space-y-2">
+                        <h3 class="font-bold text-slate-900 text-base">${item.title}</h3>
+                        <p class="text-xs text-slate-500">${item.desc}</p>
+                        <button onclick="openModal(${item.id}, 'portfolio')" class="pt-2 text-xs font-bold text-cyan-600 flex items-center gap-1">View Project Details <i class="fa-solid fa-arrow-right text-[10px]"></i></button>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function filterPortfolio(category) {
+            currentPortfolioCategory = category;
+            document.querySelectorAll('.portfolio-pill').forEach(btn => {
+                if (btn.dataset.gallery === category) {
+                    btn.className = 'portfolio-pill h-10 px-5 rounded-xl font-semibold text-xs whitespace-nowrap bg-cyan-600 text-white shadow-md shadow-cyan-600/20';
+                } else {
+                    btn.className = 'portfolio-pill h-10 px-5 rounded-xl font-semibold text-xs whitespace-nowrap bg-white border border-slate-200 text-slate-600';
+                }
+            });
+            renderPortfolio();
+        }
+
+        // Modal Handlers
+        function openModal(id, type) {
+            const modal = document.getElementById('quickview-modal');
+            let item;
+
+            if (type === 'product') {
+                item = productsData.find(p => p.id === id);
+            } else {
+                item = portfolioData.find(p => p.id === id);
+            }
+
+            if (!item) return;
+
+            document.getElementById('modal-img').src = item.img;
+            document.getElementById('modal-title').textContent = item.name || item.title;
+            document.getElementById('modal-badge').textContent = item.category;
+            document.getElementById('modal-desc').textContent = item.desc;
+
+            modal.classList.remove('hidden');
+        }
+
+        function closeModal() {
+            document.getElementById('quickview-modal').classList.add('hidden');
+        }
+
+        // Calculator Functions
+        function selectCalcType(type, basePrice) {
+            calcState.basePriceSqFt = basePrice;
+            
+            const names = {
+                shower: 'Shower Glass',
+                window: 'Window Unit',
+                mirror: 'Custom Mirror',
+                railing: 'Balustrade',
+                table: 'Table Top'
+            };
+            calcState.appName = names[type] || 'Custom Glass';
+
+            document.querySelectorAll('.calc-type-btn').forEach(btn => {
+                if (btn.dataset.type === type) {
+                    btn.className = 'calc-type-btn p-3.5 rounded-2xl border-2 border-cyan-600 bg-cyan-50/50 text-cyan-700 font-semibold text-xs flex flex-col items-center gap-2 active:scale-95 transition-all';
+                } else {
+                    btn.className = 'calc-type-btn p-3.5 rounded-2xl border-2 border-slate-100 bg-white text-slate-600 hover:border-slate-300 font-semibold text-xs flex flex-col items-center gap-2 active:scale-95 transition-all';
+                }
+            });
+
+            updateCalculation();
+        }
+
+        function adjustSlider(type, delta) {
+            const slider = document.getElementById(`${type}-slider`);
+            let newVal = parseInt(slider.value) + delta;
+            if (newVal >= parseInt(slider.min) && newVal <= parseInt(slider.max)) {
+                slider.value = newVal;
+                updateCalculation();
+            }
+        }
+
+        function selectThickness(thickLabel, multiplier) {
+            calcState.thicknessMultiplier = multiplier;
+            calcState.thickName = thickLabel;
+
+            document.querySelectorAll('.thickness-btn').forEach(btn => {
+                if (btn.dataset.thick === thickLabel) {
+                    btn.className = 'thickness-btn p-3 rounded-xl border-2 border-cyan-600 bg-cyan-50/50 text-cyan-700 font-semibold text-xs active:scale-95';
+                } else {
+                    btn.className = 'thickness-btn p-3 rounded-xl border-2 border-slate-100 bg-white font-semibold text-xs text-slate-700 active:scale-95';
+                }
+            });
+
+            updateCalculation();
+        }
+
+        function selectFinish(finishLabel, multiplier) {
+            calcState.finishMultiplier = multiplier;
+            calcState.finishName = finishLabel;
+
+            document.querySelectorAll('.finish-btn').forEach(btn => {
+                if (btn.dataset.finish === finishLabel) {
+                    btn.className = 'finish-btn p-3 rounded-xl border-2 border-cyan-600 bg-cyan-50/50 text-cyan-700 font-semibold text-xs active:scale-95';
+                } else {
+                    btn.className = 'finish-btn p-3 rounded-xl border-2 border-slate-100 bg-white font-semibold text-xs text-slate-700 active:scale-95';
+                }
+            });
+
+            updateCalculation();
+        }
+
+        function formatKES(value) {
+            return new Intl.NumberFormat('en-KE', {
+                style: 'currency',
+                currency: 'KES',
+                maximumFractionDigits: 0
+            }).format(value);
+        }
+
+        function updateCalculation() {
+            const width = parseInt(document.getElementById('width-slider').value);
+            const height = parseInt(document.getElementById('height-slider').value);
+
+            calcState.width = width;
+            calcState.height = height;
+
+            document.getElementById('width-val').textContent = `${width} in`;
+            document.getElementById('height-val').textContent = `${height} in`;
+
+            // Calculate Area in Sq Ft
+            const sqFt = (width * height) / 144;
+            const rawPrice = sqFt * calcState.basePriceSqFt * calcState.thicknessMultiplier * calcState.finishMultiplier;
+            const totalPrice = Math.round(rawPrice * 120);
+
+            // Update UI Summary
+            document.getElementById('calc-price').textContent = formatKES(totalPrice);
+            document.getElementById('summary-app').textContent = calcState.appName;
+            document.getElementById('summary-dim').textContent = `${width}" W x ${height}" H (${sqFt.toFixed(1)} sq ft)`;
+            document.getElementById('summary-thick').textContent = calcState.thickName;
+            document.getElementById('summary-finish').textContent = calcState.finishName;
+        }
+
+        function sendWhatsAppQuote() {
+            const name = document.getElementById('quote-name').value || 'Customer';
+            const price = document.getElementById('calc-price').textContent;
+            
+            const text = `Hi JosJos Glass Experts! I generated an online estimate:%0A` +
+                         `*Name:* ${encodeURIComponent(name)}%0A` +
+                         `*Application:* ${encodeURIComponent(calcState.appName)}%0A` +
+                         `*Dimensions:* ${calcState.width}" W x ${calcState.height}" H%0A` +
+                         `*Thickness:* ${encodeURIComponent(calcState.thickName)}%0A` +
+                         `*Finish:* ${encodeURIComponent(calcState.finishName)}%0A` +
+                         `*Estimated Cost:* ${encodeURIComponent(price)}%0A%0APlease contact me to schedule a measurement.`;
+
+            window.open(`https://wa.me/254712345678?text=${text}`, '_blank');
+        }
+
+        function submitQuoteForm() {
+            const name = document.getElementById('quote-name').value;
+            const phone = document.getElementById('quote-phone').value;
+
+            if (!name || !phone) {
+                alert('Please enter your name and phone number so we can process your request.');
+                return;
+            }
+
+            alert(`Thank you, ${name}! Your glass quote request has been received. Our expert estimator will call you at ${phone} shortly.`);
+        }
+
+        /* Initialize Application */
+        window.onload = function() {
+            renderProducts();
+            renderPortfolio();
+            updateCalculation();
+        };
+    </script>
+</body>
+</html>
