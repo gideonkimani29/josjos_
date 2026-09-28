@@ -57,6 +57,17 @@
             padding-bottom: 72px; /* Space for bottom nav on mobile */
         }
 
+        footer {
+            position: relative;
+            z-index: 1;
+        }
+
+        @media (max-width: 767px) {
+            footer {
+                padding-bottom: calc(5.5rem + env(safe-area-inset-bottom));
+            }
+        }
+
         @media (min-width: 768px) {
             body {
                 padding-bottom: 0;
@@ -761,7 +772,7 @@
                     <img src="assets/logos/logo.jpeg" alt="JosJos Glass Experts logo" class="w-8 h-8 rounded-lg object-cover shadow-md shadow-cyan-500/20">
                     <span class="font-bold text-white text-base">JosJos Glass Experts</span>
                 </div>
-                <div class="flex gap-6 text-sm">
+                <div class="footer-links flex flex-wrap justify-center md:justify-end gap-x-4 gap-y-2 text-sm text-center md:text-left">
                     <a href="#" onclick="navigateTo('home'); return false;" class="hover:text-white">Home</a>
                     <a href="#" onclick="navigateTo('products'); return false;" class="hover:text-white">Products</a>
                     <a href="#" onclick="navigateTo('services'); return false;" class="hover:text-white">Services</a>
@@ -771,9 +782,9 @@
                     <a href="#" onclick="navigateTo('quote'); return false;" class="hover:text-white">Quote Calculator</a>
                 </div>
             </div>
-            <div class="flex flex-col sm:flex-row justify-between items-center gap-4 text-[11px] text-slate-500">
+            <div class="footer-meta flex flex-col sm:flex-row justify-between items-center gap-3 text-[11px] text-slate-500 text-center sm:text-left">
                 <p>&copy; 2026 JosJos Glass Experts LLC. All rights reserved. Custom Architectural Glass Solutions.</p>
-                <div class="flex gap-4">
+                <div class="flex flex-wrap justify-center gap-3 sm:gap-4">
                     <span>Privacy Policy</span>
                     <span>Terms of Service</span>
                     <span>Safety Certified</span>
